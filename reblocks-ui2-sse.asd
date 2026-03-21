@@ -7,7 +7,7 @@
   :source-control (:git "https:///github.com/jmorrison/reblocks-ui2-sse")
   :bug-tracker "https://github.com/jmorrison/reblocks-ui2-sse/issues"
   :class :40ants-asdf-system
-  :defsystem-depends-on ("40ants-asdf-system")
+  :defsystem-depends-on ("40ants-asdf-system" "40ants-routes")
   :pathname "src"
-  :depends-on ("reblocks-websocket/websocket")
+  :depends-on ("reblocks-ui2-sse/sse-widget")
   :in-order-to ((test-op (test-op "reblocks-ui2-sse-tests"))))
