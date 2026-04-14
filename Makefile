@@ -16,7 +16,7 @@ SBCL=/usr/bin/sbcl --dynamic-space-size 4gb --control-stack-size 20
 
 test-sse:
 	$(SBCL) \
-            --eval "(ql:quickload '(:log4cl :sse-demo :clack-sse :clack-handler-hunchentoot :clack-sse-demo :reblocks-ui2-sse))" \
+            --eval "(ql:quickload '(:clouseau :clim-debugger :cl-advice :log4cl :sse-demo :clack-sse :clack-handler-hunchentoot :clack-sse-demo :reblocks-ui2-sse))" \
             --load examples/simple.lisp \
             --eval '(reblocks-ui2-sse-examples/simple::run)'
 
